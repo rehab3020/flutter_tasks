@@ -152,8 +152,10 @@ Widget normalTextFormField({
   required IconData preIcon,
   TextInputType keyboardText = TextInputType.emailAddress,
   String? Function(String?)? anonymousFunction,
+  bool isObscure = false,
 }) =>
     TextFormField(
+      obscureText: isObscure,
       keyboardType: keyboardText,
       decoration: InputDecoration(
         prefixIcon: Icon(

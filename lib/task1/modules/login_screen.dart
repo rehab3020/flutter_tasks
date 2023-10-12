@@ -20,9 +20,9 @@ class _LoginScreenState extends State<LoginScreen> {
         padding: const EdgeInsets.all(8.0),
         child: SingleChildScrollView(
           child: Form(
+            key: formKey,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
-              key: formKey,
               children: [
                 const SizedBox(
                   height: 10.0,
@@ -123,7 +123,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   pathOfImage: 'assets/images/Facebook.png',
                 ),
                 rowWithTextButton(
-                  normalText: 'Don’t have a account?',
+                  normalText: 'Don’t have an account?',
                   textButton: 'Register',
                   pressed: () {},
                 ),
